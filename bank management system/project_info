@@ -1,0 +1,54 @@
+Project Name: ATM(Automated Teller Machine)-Simulator System
+
+Database:MySQL
+
+Tables: Signup,signuptwo,signupthree,login,bank.
+=>  Signup,signuptwo,signupthree these 3 tables are created for register process.
+
+STEP 1:First user have to register by filling 3 forms.
+
+STEP 2:After register user will get Card Number and Pin by using this 2 things user will get login.
+
+STEP 3:After login user will see below 6 features of ATM:
+		1.Deposit 
+		2.Cash Withdrawl
+		3.Fast Cash
+		4.Mini Statement
+		5.Pin Change
+		6.Balance Inquiry
+		
+=> User can use any feature which is mention above.	
+
+* Here I've mentioned Databse Query for Reference:
+
+=>create database bankmanagementsystem;
+
+=>show databases;
+
+=>USE bankmanagementsystem;
+
+=>create table signup(formno varchar(20), name varchar(20), father_name varchar(20), dob varchar(20), gender varchar(20), email varchar(40), marital_status varchar(20), address varchar(40), city varchar(25), pin varchar(20), state varchar(25));
+
+=>show tables;
+
+=>select * from signup;
+
+=>create table signuptwo(formno varchar(20),religion varchar(20),category varchar(20),income varchar(20),education varchar(20),occupation varchar(20),panCard varchar(20),adharCard varchar(20),seniorCitizen varchar(20),existAccount varchar(20));
+
+=>select * from signuptwo;
+
+=>create table signupthree(formno varchar(20), accountType varchar(40), cardnumber varchar(25),pinnumber varchar(10),facility varchar(100));
+
+=>select * from signupthree;
+
+=>create table login(formno varchar(20),cardno varchar(25),pin varchar(25));
+
+=>select * from login;
+
+=>create table bank(pin varchar(20),date varchar(80),transactionType varchar(50),amount varchar (50));
+-- drop table bank;
+
+=>select * from bank;
+
+
+	
